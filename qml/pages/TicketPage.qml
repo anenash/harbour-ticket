@@ -7,6 +7,7 @@ import "../delegates"
 
 Page {
     id: ticketPage
+
     property variant ticket: ({})
     property int unified_price: 0
     property variant currencyRates: ({})
@@ -16,6 +17,8 @@ Page {
     property string _search_id
     property variant airports: ({})
     property variant airlines: ({})
+
+    orientation: Orientation.Portrait
 
     function buyTicket(data) {
         if (data !== "error") {

@@ -5,6 +5,9 @@ import "../utils/Utils.js" as Utils
 import "../utils"
 
 Dialog {
+
+    orientation: Orientation.Portrait
+
     property string currency: "eur"
     property string seat: "Y"
     property string currentIp
@@ -125,7 +128,7 @@ Dialog {
                             internal.departureDateValueIsSet = true
                         }
 
-                        //Depart date can not be from past
+                        //Depart date cannot be from the past
                     })
                 }
 

@@ -111,7 +111,7 @@ Item {
     }
 
     function storeFavorite(keyname, value) {
-//        console.log('storeFavorite()', value)
+        console.log('storeFavorite()', keyname, "value", value)
         if(!_db) { return; }
         _db.transaction( function(tx) {
             var result = tx.executeSql('INSERT OR REPLACE INTO favorites VALUES (?,?);', [keyname,value])
@@ -122,7 +122,7 @@ Item {
     }
 
     function getFavorite(keyname) {
-//        console.log('getFavorite()', keyname)
+        console.log('getFavorite()', keyname)
         var res
         if(!_db) { return; }
         _db.transaction( function(tx) {
@@ -135,14 +135,14 @@ Item {
     }
 
     function getFavorites() {
-//        console.log('getFavorites()')
+        console.log('getFavorites()')
         var res = []
         if(!_db) { return; }
         _db.transaction( function(tx) {
             var result = tx.executeSql('SELECT value FROM favorites')
-//            console.log(result, JSON.stringify(result))
+            console.log(result, JSON.stringify(result))
             for(var i = 0; i < result.rows.length; i++) {
-//                print(result.rows.item(i).value)
+                print(result.rows.item(i).value)
                 res.push(result.rows.item(i).value)
             }
         })

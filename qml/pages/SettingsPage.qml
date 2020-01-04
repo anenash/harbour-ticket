@@ -6,6 +6,7 @@ import "../delegates"
 
 Page {
     id: settingsPage
+
     orientation: Orientation.Portrait
 
     DataBase {

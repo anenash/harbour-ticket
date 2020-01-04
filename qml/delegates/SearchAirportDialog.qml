@@ -7,8 +7,11 @@ import "../utils/Utils.js" as Utils
 import "../utils"
 
 Dialog {
-
     id: d
+
+
+    orientation: Orientation.Portrait
+
     property string airportName
     property string airportIATA
     property string cityIata

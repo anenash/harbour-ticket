@@ -31,6 +31,8 @@ Dialog {
 
     canAccept: origin.length >= 2&&destination.length >= 2&&departureDateValueIsSet
 
+    orientation: Orientation.Portrait
+
     ListModel {
         id: classSeatsModel
         ListElement {
@@ -156,6 +158,7 @@ Dialog {
                 id: returnDateDate
 
                 visible: !oneWay
+                enabled: departureDateValueIsSet
 
                 function openDateDialog() {
                     var dialog = pageStack.push("Sailfish.Silica.DatePickerDialog", {
@@ -164,12 +167,12 @@ Dialog {
 
                     dialog.accepted.connect(function() {
                         var currDate = new Date()
-                        if (currDate <= dialog.date) {
+                        if (currDate <= dialog.date && departureSelectedDate <= dialog.date) {
                             returnDateValue = dialog.dateText
                             returnSelectedDate = dialog.date
                             returnDateValueIsSet = true
                         }
-                        //Depart date can not be from past
+                        //Depart date cannot be from the past
                     })
                 }
 

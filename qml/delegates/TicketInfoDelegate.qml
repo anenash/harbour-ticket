@@ -6,6 +6,7 @@ import "../utils/Utils.js" as Utils
 
 ListItem {
     id: ticketInfoItem
+
     property string search_id
     property string orig: ""
     property string airlineIata
@@ -18,22 +19,16 @@ ListItem {
     property int local_departure: 0
     property int local_arrival: 0
     property int unified_price: 0
+    property string language: "en"
 
     property variant proposal: ({})
     property variant airports: ({})
     property variant airlines: ({})
 
-    //    property bool   direct: false
-
     property variant currencyRatesInfo: ({})
 
-//    height: Theme.itemSizeSmall + orig_dest.height + ticketPrice.height
     contentHeight:  Theme.itemSizeSmall + orig_dest.height + ticketPrice.height
     width: parent.width
-
-    DataBase {
-        id: database
-    }
 
     QtObject {
         id: internal
@@ -52,8 +47,6 @@ ListItem {
             flyNumbers.push(t)
         }
         internal.flyNumber = flyNumbers.filter(Utils.onlyUnique).join(" - ")
-//        internal.departure_date = Utils.fromUnixToShortFormat(segment.flight[0].local_departure_timestamp, database.language)
-//        internal.arrival_date = Utils.fromUnixToShortFormat(segment.flight[0].local_arrival_timestamp, database.language)
     }
 
     Label {
@@ -96,12 +89,14 @@ ListItem {
             Text {
                 font.pixelSize: Theme.fontSizeTiny
                 color: Theme.secondaryColor
-                text: Utils.fromUnixToShortFormat(local_departure, database.language) //internal.departure_date
+                text: Utils.fromUnixToShortFormat(local_departure, language)
+//                text: Utils.fromUnixToShortFormat(local_departure, database.language) //internal.departure_date
             }
             Text {
                 font.pixelSize: Theme.fontSizeTiny
                 color: Theme.secondaryColor
-                text: Utils.fromUnixToShortFormat(local_arrival, database.language) //internal.arrival_date
+                text: Utils.fromUnixToShortFormat(local_arrival, database.language)
+//                text: Utils.fromUnixToShortFormat(local_arrival, database.language) //internal.arrival_date
             }
         }
         Row {

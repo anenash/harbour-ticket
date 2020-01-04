@@ -8,6 +8,7 @@ import "../delegates"
 
 Page {
     id: root
+
     orientation: Orientation.Portrait
 
     property variant airportsInfo: ({})
@@ -273,10 +274,10 @@ Page {
                                        direct: directFlight,
                                        origin: fav_origin,
                                        destination: fav_destination,
-                                       originText: originName, // + " (" + fav_origin + ")",
-                                       destinationText: destinationName, // + " (" + fav_destination + ")",
-                                       originAirport: originName + " (" + fav_origin + ")",
-                                       destinationAirport: destinationName + " (" + fav_destination + ")",
+                                       originText: originName + " (" + fav_origin + ")",
+                                       destinationText: destinationName + " (" + fav_destination + ")",
+                                       originAirport: originName, // + " (" + fav_origin + ")",
+                                       destinationAirport: destinationName, // + " (" + fav_destination + ")",
                                        passengers: adults,
                                        childrens: children,
                                        departureSelectedDate: departureSelectedDate,

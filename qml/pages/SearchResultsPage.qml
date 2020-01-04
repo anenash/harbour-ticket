@@ -9,6 +9,9 @@ import "../utils"
 import "../delegates"
 
 Page {
+
+    orientation: Orientation.Portrait
+
     property bool showMainView: false
 
     property string searchUrl
@@ -31,7 +34,7 @@ Page {
         property string selectedCurrency
 
         function getPrice(value, unifiedValue, currencyName) {
-            if (internal.convertPrice) {
+            if (internal.convertPrice && internal.selectedCurrency.toUpperCase() !== currencyName.toUpperCase()) {
                 return (unifiedValue/internal.currencyRates[internal.selectedCurrency]).toFixed(0) + " " + internal.selectedCurrency.toUpperCase()
             } else {
                 return value + " " + currencyName.toUpperCase()
@@ -180,6 +183,7 @@ Page {
                 local_arrival: model.data.local_arrival_timestamp
                 local_departure: model.data.local_departure_timestamp
                 unified_price: model.data._value
+                language: database.language
             }
             header: PageHeader {
                 title: qsTr("Results")
