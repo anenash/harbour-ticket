@@ -168,7 +168,7 @@
     </message>
     <message>
         <source>Please, change the search request</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę zmienić kryteria wyszukiwania</translation>
     </message>
     <message>
         <source>Sort by duration</source>
@@ -318,107 +318,107 @@
     </message>
     <message>
         <source>Round trip</source>
-        <translation type="unfinished"></translation>
+        <translation>Podróż w obie strony</translation>
     </message>
     <message>
         <source>Complex search</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompleksowe wyszukiwanie</translation>
     </message>
     <message>
         <source>Fly with more than two stops</source>
-        <translation type="unfinished"></translation>
+        <translation>Leć z więcej niż dwoma przystankami</translation>
     </message>
     <message>
         <source>Search history is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Historia wyszukiwania jest pusta</translation>
     </message>
     <message>
         <source>Compensation for flight delay or cancellation</source>
-        <translation type="unfinished"></translation>
+        <translation>Odszkodowanie za opóźnienie lotu lub odwołanie lotu</translation>
     </message>
     <message>
         <source>Rent a car</source>
-        <translation type="unfinished"></translation>
+        <translation>Wynajmij samochód</translation>
     </message>
 </context>
 <context>
     <name>TicketDelegate</name>
     <message>
         <source>&lt;b&gt;Flight number:&lt;/b&gt; </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Numer lotu:&lt;/b&gt; </translation>
     </message>
     <message>
         <source>&lt;br&gt;&lt;b&gt;Aircraft:&lt;/b&gt; </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;br&gt;&lt;b&gt;Samolot:&lt;/b&gt; </translation>
     </message>
     <message>
         <source>&lt;b&gt;Trip duration:&lt;/b&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Czas podróży:&lt;/b&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Time to wait:&lt;/b&gt; </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Czas oczekiwania:&lt;/b&gt; </translation>
     </message>
     <message>
         <source>Baggage: </source>
-        <translation type="unfinished"></translation>
+        <translation>Bagaż: </translation>
     </message>
     <message>
         <source>Handbags: </source>
-        <translation type="unfinished"></translation>
+        <translation>Bagaż podręczny: </translation>
     </message>
 </context>
 <context>
     <name>TicketInfoDelegate</name>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezpośredni</translation>
     </message>
     <message>
         <source>&lt;b&gt;Trip duration:&lt;/b&gt; </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Czas podróży:&lt;/b&gt; </translation>
     </message>
     <message>
         <source>&lt;b&gt;Stops:&lt;/b&gt; </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Przystanki:&lt;/b&gt; </translation>
     </message>
 </context>
 <context>
     <name>TicketPage</name>
     <message>
         <source>Buy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kup</translation>
     </message>
 </context>
 <context>
     <name>Utils</name>
     <message>
         <source> h </source>
-        <translation type="unfinished"></translation>
+        <translation> h </translation>
     </message>
     <message>
         <source> m</source>
-        <translation type="unfinished"></translation>
+        <translation> m</translation>
     </message>
     <message>
         <source>luggage is not included in price</source>
-        <translation type="unfinished"></translation>
+        <translation>cena nie zawiera opłaty za bagaż</translation>
     </message>
     <message>
         <source>No information about luggage</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak informacji o bagażu</translation>
     </message>
     <message>
         <source>no luggage</source>
-        <translation type="unfinished"></translation>
+        <translation>brak bagażu</translation>
     </message>
     <message>
         <source> kg</source>
-        <translation type="unfinished"></translation>
+        <translation> kg</translation>
     </message>
     <message>
         <source> luggage</source>
-        <translation type="unfinished"></translation>
+        <translation> bagaż</translation>
     </message>
     <message>
         <source>luggage of </source>
